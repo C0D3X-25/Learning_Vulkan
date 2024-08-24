@@ -18,6 +18,8 @@ namespace lve {
 
 		bool shouldClose() { return glfwWindowShouldClose(m_p_window); }
 
+		void createWindowSurface(VkInstance instance, VkSurfaceKHR* p_surface);
+
 	private:
 		void initWindow();
 
